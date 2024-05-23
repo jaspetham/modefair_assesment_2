@@ -28,9 +28,12 @@ function App() {
           <div className="border-1">Qty per unit</div>
         </div>
         <div className="data-wrapper">
-          {products.map((product) => (
-            <div key={product.ProductID}>
-              <div className="product-table">
+          {products.map((product,index) => (
+            <div>
+              <div
+                className={`product-table ${index % 2 === 0 ? "bg-slate-200" : "bg-white-100"}`}
+                key={product.ProductID}
+              >
                 <div className="border-1 flex items-center justify-center">
                   <button
                     onClick={() => toggleDetails(product.ProductID)}

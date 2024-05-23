@@ -19,13 +19,6 @@ div#root{
     padding:0.25rem;
 }
 
-.data-wrapper .product-table:nth-child(odd) {
-    background: white;
-}
-.data-wrapper .product-table:nth-child(even) {
-    background: rgba(148, 163, 184, .4);
-}
-
 .data-wrapper .product-table:hover, .product-details-wrapper:hover{
     background: rgba(148, 163, 184, .7);
 }
